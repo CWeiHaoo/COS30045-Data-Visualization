@@ -62,3 +62,20 @@ energy-webpage-v1
 │
 ├── index.html
 └── README.md
+
+/* Generative AI Reflection */
+
+* **Tool(s) Used:** 
+  * Google Gemini
+
+* **What GenAI was Used For:** 
+  * Writing the CSS styling rules for the active navigation bar, hover states, and color theme matching the power logo.
+  * Debugging file paths and linking issues.
+
+* **What was Changed or Adapted:** 
+  * Adjusted the relative file paths to match the local `assets/` folder structure (`assets/css/`, `assets/images/`, `assets/js/`).
+  * Updated content and placeholder headers for `index.html`
+
+* **What I Learned:** 
+  * The importance of keeping folders organized neatly and folder structure have to be accurate.
+  * How to coordinate Git version control between VS Code and GitHub Desktop.
