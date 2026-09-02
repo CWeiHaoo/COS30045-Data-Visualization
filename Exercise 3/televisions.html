@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Televisions - Appliance Energy Consumption</title>
+    <title>Decoding TV Energy Consumption | Data Story</title>
+    <!-- Corrected path to CSS inside assets/css/ -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
 
-    <!-- Top Navigation Menu -->
     <header>
         <nav>
             <a href="index.html" class="nav-brand">
@@ -23,36 +23,71 @@
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Television Energy Efficiency</h1>
-        <p>Televisions are among the most common entertainment appliances in Australian households. Screen size, display technology, and standby settings significantly affect total household electricity consumption.</p>
+    <div class="hero">
+        <h1>Decoding Television Energy Consumption</h1>
+        <p>A data-driven guide to how screen size and energy efficiency ratings impact household power usage.</p>
+    </div>
 
-        <section>
-            <h2>Display Technologies & Power Usage</h2>
+    <main class="story-container">
+
+        <!-- Introduction Section -->
+        <section class="story-section">
+            <h2>The Hidden Cost of Living Room Screens</h2>
+            <p>
+                As household energy costs climb, everyday electronics play a compounding role in annual electricity bills. 
+                Using official television energy rating data, this report investigates what truly drives power consumption across modern TVs 
+                to help consumers and regulators make informed, cost-effective decisions.
+            </p>
+        </section>
+
+        <!-- Finding 1: Screen Size -->
+        <section class="story-section">
+            <h3>1. The Size Factor: Screen Area Dictates Base Energy Draw</h3>
+            <p>
+                The clearest predictor of annual energy use (kWh/year) is physical display size. As screens jump from modest 
+                living-room sizes (40–43 inches) up to home-theatre displays (75 inches and above), the total power demand scales rapidly 
+                due to the increased surface area requiring backlighting.
+            </p>
+            <div class="visualisation-box">
+                <!-- Place your image inside Exercise 3/assets/images/ -->
+                <img src="assets/images/chart1_screensize_vs_energy.png" alt="Scatter plot of Screen Size vs Annual Energy Consumption">
+                <span class="caption">Figure 1: Relationship between screen diagonal size (inches) and estimated annual energy consumption (kWh/year).</span>
+            </div>
+            
+        </section>
+
+        <!-- Finding 2: The Star Rating Trap -->
+        <section class="story-section">
+            <h3>2. The Star Rating Paradox: Bigger Screens Use More Total Power</h3>
+            <p>
+                Many buyers assume a 6-star rating guarantees the lowest electricity bill. However, energy star ratings are comparative 
+                <em>relative to screen area</em>. A 6-star 75-inch television will often consume significantly more total kilowatt-hours 
+                per year than an older 4-star 43-inch television.
+            </p>
+            <div class="visualisation-box">
+                <!-- Place your image inside Exercise 3/assets/images/ -->
+                <img src="assets/images/chart2_stars_vs_power.png" alt="Chart comparing Star Ratings against Total Energy Use across sizes">
+                <span class="caption">Figure 2: Total energy use grouped by star rating across various screen size tiers.</span>
+            </div>
+            
+        </section>
+
+        <!-- Conclusion & Recommendations -->
+        <section class="story-section conclusion">
+            <h2>Buyer Takeaways</h2>
             <ul>
-                <li><strong>OLED:</strong> Delivers deep contrast by turning off individual pixels, making energy consumption depend heavily on the brightness of displayed scenes.</li>
-                <li><strong>LED / LCD:</strong> Utilizes backlighting, offering predictable energy efficiency across varying brightness levels.</li>
-                <li><strong>Screen Size:</strong> Larger display panels generally require more energy to illuminate.</li>
+                <li><strong>Right-size your room:</strong> Pick the smallest screen size that comfortably fits your viewing distance.</li>
+                <li><strong>Read the kWh label:</strong> Always check the estimated annual kWh consumption, not just the star count.</li>
+                <li><strong>Balance size and stars:</strong> A moderately sized television with a solid rating will consistently outperform an oversized high-star screen on your power bill.</li>
             </ul>
         </section>
 
-        <section>
-            <h2>Tips to Reduce Television Energy Costs</h2>
-            <ul>
-                <li>Enable automatic brightness adjustment (ambient light sensor).</li>
-                <li>Activate sleep timers or auto-power-off modes when idle.</li>
-                <li>Turn off standby mode at the wall socket if not using smart home integrations.</li>
-            </ul>
-        </section>
     </main>
 
-    <!--Footer -->
     <footer>
-        <p>2026 CHAN WEI HAO.</p>
-        <p><small>Generative AI Acknowledgement: Layout and content structured with GenAI assistance.</small></p>
+        <p>&copy; 2026 CHAN WEI HAO.</p>
+        <p><small>Generative AI Acknowledgement: Layout and scripting developed with GenAI assistance.</small></p>
     </footer>
 
-    <script src="assets/js/scripts.js"></script>
 </body>
 </html>
