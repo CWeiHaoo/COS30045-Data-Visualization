@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exercise 6.1 - Histogram</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/visualisation.css">
+</head>
+
+<body>
+
+    <main>
+
+        <h1>TV Energy Consumption Histogram</h1>
+
+        <p>
+            This histogram shows the frequency of TV energy consumption
+            values from the January 2026 TV dataset.
+        </p>
+
+        <div class="responsive-svg-container">
+            <div id="histogram"></div>
+        </div>
+
+    </main>
+
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Exercise 6 JavaScript -->
+    <script src="js/load-data.js"></script>
+    <script src="js/shared-constants.js"></script>
+    <script src="js/interactions.js"></script>
+    <script src="js/histogram.js"></script>
+
+</body>
+
+</html>
