@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Exercise 6.1 - Histogram</title>
+    <title>Exercise 6.1 Histogram</title>
 
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/visualisation.css">
@@ -18,25 +18,28 @@
         <h1>TV Energy Consumption Histogram</h1>
 
         <p>
-            This histogram shows the frequency of TV energy consumption
-            values from the January 2026 TV dataset.
+            Distribution of energy consumption for TVs in the January 2026 dataset.
         </p>
+
+        <div id="filters_screen"></div>
 
         <div class="responsive-svg-container">
             <div id="histogram"></div>
         </div>
 
+        <h2>Energy Consumption by Star Rating</h2>
+        <div id="scatterplot" class="responsive-svg-container"></div>
+
     </main>
 
 
-    <!-- D3 -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <!-- Exercise 6 JavaScript -->
     <script src="js/load-data.js"></script>
     <script src="js/shared-constants.js"></script>
     <script src="js/interactions.js"></script>
     <script src="js/histogram.js"></script>
+    <script src="js/scatterplot.js"></script>
 
 </body>
 

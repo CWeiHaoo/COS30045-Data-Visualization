@@ -1,18 +1,12 @@
-d3.csv("data/Ex6_TVdata_withStar.csv", d => {
+d3.csv("data/Ex6_TVdata_withStar.csv", d3.autoType)
+    .then(data => {
 
-    return {
-        brand: d.brand,
-        model: d.model,
-        screenSize: +d.screenSize,
-        screenTech: d.screenTech,
-        star: +d.star,
-        energyConsumption: +d.energyConsumption
-    };
+        console.log("TV data:", data);
 
-}).then(data => {
+        drawHistogram(data);
 
-    console.log("TV data:", data);
+        populateFilters(data);
 
-    drawHistogram(data);
+        drawScatterplot(data);
 
-});
+    });

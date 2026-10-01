@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #ffffff;
-    color: #222222;
+    background-color: white;
+    color: #222;
 }
 
 main {
@@ -16,5 +16,24 @@ h1 {
 }
 
 p {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+}
+
+#filters_screen {
+    margin-bottom: 20px;
+}
+
+#filters_screen button {
+    padding: 8px 16px;
+    margin-right: 8px;
+
+    border: 1px solid #999;
+    background-color: white;
+
+    cursor: pointer;
+}
+
+#filters_screen button.active {
+    background-color: steelblue;
+    color: white;
 }
