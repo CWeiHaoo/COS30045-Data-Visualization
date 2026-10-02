@@ -66,8 +66,6 @@ const drawScatterplot = data => {
         .attr("class", "axis")
         .call(leftAxis);
 
-
-    //x-axis label
     svg
         .append("text")
         .attr("class", "axis-label")
@@ -76,8 +74,6 @@ const drawScatterplot = data => {
         .attr("text-anchor", "middle")
         .text("Star Rating");
 
-
-    //y-axislabel
     svg
         .append("text")
         .attr("class", "axis-label")

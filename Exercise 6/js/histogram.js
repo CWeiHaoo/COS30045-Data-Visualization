@@ -1,12 +1,9 @@
 const drawHistogram = data => {
 
-    // SVG
     const svg = d3.select("#histogram")
         .append("svg")
         .attr("viewBox", `0 0 ${width} ${height}`);
 
-
-    // Inner chart
     const innerChart = svg
         .append("g")
         .attr(
@@ -15,13 +12,12 @@ const drawHistogram = data => {
         );
 
 
-    // Create bins
+    //bins
     const bins = binGenerator(data);
 
     console.log("Bins:", bins);
 
-
-    // Bin limits
+    //bin limit
     const binsMin = bins[0].x0;
 
     const binsMax =
@@ -30,21 +26,15 @@ const drawHistogram = data => {
     const binsMaxLength =
         d3.max(bins, d => d.length);
 
-
-    // X scale
     xScale
         .domain([binsMin, binsMax])
         .range([0, innerWidth]);
 
-
-    // Y scale
     yScale
         .domain([0, binsMaxLength])
         .range([innerHeight, 0])
         .nice();
 
-
-    // Histogram bars
     innerChart
         .selectAll(".bar")
         .data(bins)
@@ -63,8 +53,6 @@ const drawHistogram = data => {
         .attr("fill", barColor)
         .attr("stroke", bodyBackgroundColor);
 
-
-    // X axis
     const bottomAxis = d3.axisBottom(xScale);
 
     innerChart
@@ -76,8 +64,6 @@ const drawHistogram = data => {
         )
         .call(bottomAxis);
 
-
-    // Y axis
     const leftAxis = d3.axisLeft(yScale);
 
     innerChart
@@ -85,8 +71,7 @@ const drawHistogram = data => {
         .attr("class", "axis")
         .call(leftAxis);
 
-
-    // X-axis label
+    //y axis
     svg
         .append("text")
         .attr("class", "axis-label")
@@ -95,8 +80,7 @@ const drawHistogram = data => {
         .attr("text-anchor", "middle")
         .text("Energy Consumption (kWh/year)");
 
-
-    // Y-axis label
+    //y axis
     svg
         .append("text")
         .attr("class", "axis-label")

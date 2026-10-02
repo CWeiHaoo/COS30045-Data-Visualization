@@ -1,4 +1,3 @@
-/* Color theme matching the Power logo */
 :root {
     --primary-color: #f7b731;
     --dark-color: #2d3436;
@@ -15,7 +14,6 @@ body {
     line-height: 1.6;
 }
 
-/* Header & Top Navigation */
 header {
     background-color: var(--white);
     border-bottom: 2px solid #eee;
@@ -62,20 +60,17 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Mouse-over (hover) effect */
 .nav-links a:hover {
     background-color: var(--primary-color);
     color: var(--white);
 }
 
-/* Active Page Indicator */
 .nav-links a.active {
     background-color: var(--primary-color);
     color: var(--white);
     font-weight: bold;
 }
 
-/* Main Content Layout */
 main {
     max-width: 900px;
     margin: 30px auto;
@@ -85,7 +80,6 @@ main {
     box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-/* FAQ Accordion Styling */
 .faq-item {
     margin-bottom: 12px;
     border: 1px solid #ddd;
@@ -107,17 +101,16 @@ main {
 }
 
 .faq-answer {
-    display: none; /* Hidden by default */
+    display: none; 
     padding: 14px 18px;
     background-color: var(--white);
     border-top: 1px solid #eee;
 }
 
 .faq-answer.show {
-    display: block; /* Revealed when active */
+    display: block; 
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;

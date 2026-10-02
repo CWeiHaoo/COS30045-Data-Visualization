@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Appliance Energy Consumption</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <a href="index.html" class="nav-brand">
+                <img src="assets/images/PowerIcon.png" alt="Power Logo">
+                <span>Energy Tracker</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="televisions.html">Televisions</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Appliance Energy Consumption in Australia</h1>
+
+        <p>
+            Household appliances account for a significant portion of
+            Australian residential electricity consumption. Managing energy
+            usage reduces utility bills and greenhouse gas emissions.
+        </p>
+
+        <section class="chart-section">
+            <h2>Average Energy Consumption of 55-inch TVs</h2>
+            <div class="responsive-svg-container">
+                <div id="bar-chart"></div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h2>Australian Electricity Spot Prices</h2>
+            <div class="responsive-svg-container">
+                <div id="line-chart"></div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <h2>TV Screen Size Categories</h2>
+            <div class="responsive-svg-container">
+                <div id="donut-chart"></div>
+            </div>
+        </section>
+
+        <h2>Frequently Asked Questions (FAQ)</h2>
+
+        <div class="faq-item">
+
+            <h3 class="faq-question">
+                What is the Energy Star Rating system in Australia?
+            </h3>
+
+            <div class="faq-answer">
+
+                <p>
+                    The Energy Rating Label helps Australian consumers compare
+                    the energy efficiency and running costs of appliances before
+                    purchasing. More stars mean higher energy efficiency.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+            <h3 class="faq-question">
+                Which household appliances consume the most electricity?
+            </h3>
+
+            <div class="faq-answer">
+
+                <p>
+                    Heating and cooling systems typically account for around
+                    40% of home energy usage, followed by water heating (25%)
+                    and refrigeration/televisions (around 15%).
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <p>2026 CHAN WEI HAO.</p>
+
+        <p>
+            <small>
+                Generative AI Acknowledgement:
+                Layout and scripting developed with GenAI assistance.
+            </small>
+        </p>
+
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="assets/js/bar-chart.js"></script>
+    <script src="assets/js/line-chart.js"></script>
+    <script src="assets/js/donut-chart.js"></script>
+
+</body>
+</html>

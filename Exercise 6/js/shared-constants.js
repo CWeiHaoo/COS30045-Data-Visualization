@@ -1,4 +1,3 @@
-// Chart dimensions
 const margin = {
     top: 40,
     right: 30,
@@ -12,23 +11,15 @@ const height = 500;
 const innerWidth = width - margin.left - margin.right;
 const innerHeight = height - margin.top - margin.bottom;
 
-
-// Colours
 const barColor = "steelblue";
 const bodyBackgroundColor = "white";
 
-
-// Scales
 const xScale = d3.scaleLinear();
 const yScale = d3.scaleLinear();
 
-
-// Histogram bins
 const binGenerator = d3.bin()
     .value(d => d.energyConsumption);
 
-
-// Screen type filters
 const screenFilters = [
     {
         id: "all",

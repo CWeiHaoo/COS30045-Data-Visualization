@@ -14,4 +14,3 @@ Tool Used: Gemini & ChatGPT
 
 Purpose: Generating base and customized SVG elements (house, shapes, Bézier paths), structuring HTML templates, and identifying coordinate annotations.
 
-Student Contribution: Reviewed, integrated, and modified the SVG coordinate parameters, applied group transformations (<g> translation) for the windows, and documented the visual output.
